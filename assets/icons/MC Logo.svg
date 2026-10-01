@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <radialGradient id="groundShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="grassTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#86EFAC"/>
+      <stop offset="50%" stop-color="#4ADE80"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+
+    <linearGradient id="dirtLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#583112"/>
+      <stop offset="100%" stop-color="#321A07"/>
+    </linearGradient>
+
+    <linearGradient id="dirtRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#784318"/>
+      <stop offset="100%" stop-color="#4A270B"/>
+    </linearGradient>
+
+    <linearGradient id="grassSideLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+    <linearGradient id="grassSideRight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80"/>
+      <stop offset="100%" stop-color="#16A34A"/>
+    </linearGradient>
+
+    <radialGradient id="buttonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4ADE80" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="buttonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80"/>
+      <stop offset="50%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#15803D"/>
+    </linearGradient>
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+
+    <filter id="btnGlowFilter">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <ellipse cx="250" cy="425" rx="150" ry="35" fill="url(#groundShadow)"/>
+
+  <g filter="url(#dropShadow)">
+    <path d="M 110 170 L 250 250 L 250 410 L 110 330 Z" fill="url(#dirtLeft)"/>
+
+    <path d="M 190 280 l -28 -16 v 24 l 28 16 Z" fill="#231204" opacity="0.6"/>
+    <path d="M 150 310 l -21 -12 v 20 l 21 12 Z" fill="#231204" opacity="0.5"/>
+    <path d="M 220 350 l -28 -16 v 24 l 28 16 Z" fill="#784318" opacity="0.3"/>
+    <path d="M 180 360 l -21 -12 v 20 l 21 12 Z" fill="#231204" opacity="0.5"/>
+
+    <path d="M 250 250 L 390 170 L 390 330 L 250 410 Z" fill="url(#dirtRight)"/>
+
+    <path d="M 290 280 l 28 -16 v 24 l -28 16 Z" fill="#9A5720" opacity="0.5"/>
+    <path d="M 340 230 l 21 -12 v 20 l -21 12 Z" fill="#231204" opacity="0.5"/>
+    <path d="M 310 340 l 28 -16 v 24 l -28 16 Z" fill="#9A5720" opacity="0.4"/>
+    <path d="M 350 310 l 21 -12 v 20 l -21 12 Z" fill="#231204" opacity="0.4"/>
+
+    <path d="M 110 170 
+             L 110 200 L 145 220 L 145 210 
+             L 180 230 L 180 240 L 215 260 L 215 240 
+             L 250 260 L 250 250 Z" 
+          fill="url(#grassSideLeft)"/>
+
+    <path d="M 250 250 
+             L 250 265 L 285 245 L 285 255 
+             L 320 235 L 320 225 L 355 205 L 355 215 
+             L 390 195 L 390 170 Z" 
+          fill="url(#grassSideRight)"/>
+
+    <path d="M 250 90 L 390 170 L 250 250 L 110 170 Z" fill="url(#grassTop)"/>
+
+    <path d="M 250 130 l -28 16 l 28 16 l 28 -16 Z" fill="#FFFFFF" opacity="0.2"/>
+    <path d="M 300 160 l -21 12 l 21 12 l 21 -12 Z" fill="#FFFFFF" opacity="0.15"/>
+    <path d="M 190 170 l -21 12 l 21 12 l 21 -12 Z" fill="#15803D" opacity="0.25"/>
+  </g>
+
+  <g transform="translate(250, 250)">
+    <ellipse cx="0" cy="0" rx="52" ry="52" fill="#000000" opacity="0.3"/>
+
+    <circle cx="0" cy="0" r="58" fill="url(#buttonGlow)"/>
+
+    <circle cx="0" cy="0" r="44" fill="url(#buttonGrad)" stroke="#DCFCE7" stroke-width="2.5" filter="url(#btnGlowFilter)"/>
+
+    <circle cx="0" cy="0" r="36" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+
+    <path d="M -10 -18 L 18 0 L -10 18 Z" fill="#FFFFFF" stroke-linejoin="round" filter="url(#btnGlowFilter)"/>
+    <path d="M -8 -14 L 14 0 L -8 14 Z" fill="#F0FDF4"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+{
+    "schemaVersion":  6,
+    "appVersion":  "V1.0",
+    "autoCloseAfterMinecraftStarts":  true,
+    "rememberScanFolders":  true,
+    "autoCheckEnvironmentBeforeLaunch":  true,
+    "autoScanNewFolder":  true,
+    "theme":  "light",
+    "accentColor":  "aqua",
+    "language":  "en-US",
+    "backgroundImage":  "",
+    "backgroundZoomBasis":  "fit",
+    "backgroundZoom":  1,
+    "backgroundOffsetX":  0,
+    "backgroundOffsetY":  0,
+    "backgroundBlur":  2,
+    "uiOpacity":  0.13,
+    "windowPlacement":  {
+                            "left":  263.3,
+                            "top":  0,
+                            "width":  1180,
+                            "height":  958,
+                            "maximized":  true
+                        },
+    "projectColumns":  [
+                           {
+                               "id":  "Name",
+                               "displayIndex":  0,
+                               "width":  160
+                           },
+                           {
+                               "id":  "MinecraftDisplay",
+                               "displayIndex":  1,
+                               "width":  100
+                           },
+                           {
+                               "id":  "EnvironmentDisplay",
+                               "displayIndex":  2,
+                               "width":  110
+                           },
+                           {
+                               "id":  "LoaderDisplay",
+                               "displayIndex":  3,
+                               "width":  190
+                           },
+                           {
+                               "id":  "JavaDisplay",
+                               "displayIndex":  4,
+                               "width":  150
+                           },
+                           {
+                               "id":  "StatusDisplay",
+                               "displayIndex":  5,
+                               "width":  190
+                           }
+                       ],
+    "scanFolders":  [
+
+                    ]
+}
